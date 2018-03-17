@@ -13,30 +13,34 @@
   <div class="wrapper">
     <header class="header">
       <h1 class="header__heading">
-        <a href="./index" class="header__heading-link">Personal Medical Advice</a>
+        <a href="./index.html" class="header__heading-link">PMA</a>
       </h1>
-     <a class="header__nav" href="./authorization">Вход</a>
+     <a class="header__nav" href="./authorization.html">Вход</a>
     </header>
     <main class="main-content">
-      <h2 class="uk-heading-primary main-heading">Зарегистрируйтесь</h2>
       <form method="POST" class="form">
+        <h2 class="form__heading">Регистрация</h2>
         <ul class="form__list uk-list">
-            <li class="uk-margin form__item">
-              <label for="username" class="form__label">Введите имя пользователя</label>
-              <div class="uk-inline">
+            <li class="uk-margin-bottom form__item">
+              <label for="email" class="form__label">Введите email</label>
+              <div class="uk-inline form__row">
                 <span class="uk-form-icon" uk-icon="icon: user"></span>
-                <input class="uk-input" type="text" id="username" placeholder="имя пользователя">
+                <input class="uk-input" type="text" required id="email" placeholder="email">
               </div>
             </li>
-            <li class="uk-margin form__item">
+            <li class="uk-margin-bottom form__item">
               <label for="password" class="form__label">Введите пароль</label>
-              <div class="uk-inline">
+              <div class="uk-inline form__row">
                 <span class="uk-form-icon" uk-icon="icon: lock"></span>
-                <input class="uk-input" type="password" id="password" placeholder="пароль">
+                <input class="uk-input" type="password" minlength="5" required id="password" placeholder="пароль">
               </div>
             </li>
-            <li class="uk-margin form__item">
-              <button class="uk-button uk-button-primary" type="submit">Зарегистироваться</button>
+            <li class="uk-margin-bottom form__item">
+              <button class="uk-button uk-button-primary form__btn" type="submit">Создать аккаунт</button>
+            </li>
+            <li class="form__item">
+              Уже есть аккаунт?
+              <a class="form__link" href="./authorization.html">Вход</a>
             </li>
         </ul>
       </form>
