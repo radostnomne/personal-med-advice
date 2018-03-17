@@ -8,13 +8,13 @@
             "type": "node",
             "request": "launch",
             "name": "Test",
-            "program": "${workspaceFolder}/test.js"
+            "program": "${workspaceFolder}/server/test.js"
         },
         {
             "type": "node",
             "request": "launch",
             "name": "Run",
-            "program": "${workspaceFolder}/index.js"
+            "program": "${workspaceFolder}/server/index.js"
         }
     ]
 }
