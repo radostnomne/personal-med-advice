@@ -17,23 +17,23 @@
       </h1>
     </header>
     <main class="main-content">
-      <form method="POST" class="registration-form" data-validate>
+      <form method="POST" class="registration-form" data-form data-validate>
         <h2 class="registration-form__heading">Регистрация</h2>
         <ul class="registration-form__list uk-list">
             <li class="uk-margin-bottom registration-form__item">
               <label for="email" class="registration-form__label">Введите email</label>
               <div class="uk-inline registration-form__row">
-                <input class="uk-input" type="email" required id="email" placeholder="email">
+                <input class="uk-input" name="login" type="email" required id="email" placeholder="email">
               </div>
             </li>
             <li class="uk-margin-bottom registration-form__item">
               <label for="password" class="registration-form__label">Введите пароль</label>
               <div class="uk-inline registration-form__row">
-                <input class="uk-input" type="password" minlength="5" required id="password" placeholder="пароль">
+                <input class="uk-input" name="password" type="password" minlength="5" required id="password" placeholder="пароль">
               </div>
             </li>
             <li class="uk-margin-bottom registration-form__item">
-              <button class="uk-button uk-button-primary registration-form__btn" type="submit">Создать аккаунт</button>
+              <button data-reg-btn class="uk-button uk-button-primary registration-form__btn" type="submit">Создать аккаунт</button>
             </li>
             <li class="registration-form__item">
               Уже есть аккаунт?
@@ -43,9 +43,8 @@
       </form>
     </main>
   </div>
+  <script src="./script/jquery-3.3.1.min.js"></script>
   <script src="./script/validate.min.js"></script>
-  <script>
-    validate.init();
-  </script>
+  <script src="./script/main.js"></script>
 </body>
 </html>

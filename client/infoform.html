@@ -4,113 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- UIkit CSS -->
     <link rel="stylesheet" href="./style/uikit.min.css" />
     <link rel="stylesheet" href="./style/styles.css" />
-    <!-- UIkit JS -->
-    <title>Document</title>
+    <title>Личные данные</title>
 </head>
 <body>
     <header class="header">
-            <h1 class="header__heading">
+        <h1 class="header__heading">
           <a href="./index.html" class="header__heading-link">Personal Medical Advice</a>
         </h1>
     </header>
     <div class="user-info--wrapper uk-margin-medium-top ">
         <h1 class="uk-heading-divider uk-margin-small-left uk-margin-small-right">Личная анкета</h1>
-        <form method="POST"  class="uk-width-3-6 user-info--form">
+        <form method="POST" data-form data-validate class="uk-width-3-6 user-info--form">
             <h2>Личные данные</h2>
             <div class="uk-margin">
                 <label>Имя</label>
-                <input class="uk-input" data-validate type="text" required>
+                <input class="uk-input" name="name" type="text" required>
             </div>
             <div  class="uk-margin">
                 <label>Пол</label>
-                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="radio1" checked>М</span>
-                <span><input class="uk-radio" type="radio" name="radio1">Ж</span>
+                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="sex" checked>М</span>
+                <span><input class="uk-radio" type="radio" name="sex">Ж</span>
             </div>
             <div class="uk-margin">
                 <label>Рост, см</label>
-                <input class="uk-input" type="number" min="10" required>
+                <input class="uk-input" type="number" min="10" name="height" required>
             </div>
             <div  class="uk-margin">
                 <label>Вес, кг</label>
-                <input class="uk-input" type="number" min="10" required>
+                <input class="uk-input" type="number" min="10" name="weight" required>
             </div>
             <div class="uk-margin">
                 <label>Возраст</label>
-                <input class="uk-input" type="number" min="1" required>
+                <input class="uk-input" type="number" min="1" name="age" required>
             </div>
             <h2>Вредные привычки</h2>
             <div class="uk-margin">
                 <label>Курите ли вы сигареты?</label>
-                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="radio2">Да</span>
-                <span><input class="uk-radio" type="radio" name="radio2"  checked>Нет</span>
+                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="smoking">Да</span>
+                <span><input class="uk-radio" type="radio" name="smoking"  checked>Нет</span>
             </div>
             <div class="uk-margin">
                 <label>Пьёте ли вы алкоголь?</label>
-                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="radio3" checked>Да</span>
-                <span><input class="uk-radio" type="radio" name="radio3" checked>Нет</span>
+                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="alcohol" checked>Да</span>
+                <span><input class="uk-radio" type="radio" name="alcohol" checked>Нет</span>
             </div>
             <div class="uk-margin">
                 <label>Принимаете ли вы наркотики?</label>
-                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="radio4" checked>Да</span>
-                <span><input class="uk-radio" type="radio" name="radio4" checked>Нет</span>
+                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="drugs" checked>Да</span>
+                <span><input class="uk-radio" type="radio" name="drugs" checked>Нет</span>
             </div>
             <h2>Здоровье</h2>
             <div class="uk-margin">
                 <label>Есть ли у вас давление?</label>
-                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="radio5">Да</span>
-                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="radio5">Нет</span>
+                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="highPressure">Да</span>
+                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="highPressure">Нет</span>
                 <span><input class="uk-radio" type="radio" name="radio5" checked>Не знаю</span>
             </div>
             <div class="uk-margin">
                 <label>Высокое содержание сахара в крови?</label>
-                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="radio6">Да</span>
-                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="radio6">Нет</span>
+                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="highSugar">Да</span>
+                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="highSugar">Нет</span>
                 <span><input class="uk-radio" type="radio" name="radio6" checked>Не знаю</span>
             </div>
             <div class="uk-margin">
                 <label>Высокий уровень холестерина в крови?</label>
-                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="radio7">Да</span>
-                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="radio7">Нет</span>
+                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="highCholesterol">Да</span>
+                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="highCholesterol">Нет</span>
                 <span><input class="uk-radio" type="radio" name="radio7" checked>Не знаю</span>
             </div>
             <div>
                 <label>Делались ли прививки?</label>
-                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="radio8">Да</span>
-                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="radio8">Нет</span>
+                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="hasVaccination">Да</span>
+                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="hasVaccination">Нет</span>
                 <span><input class="uk-radio" type="radio" name="radio8" checked>Не знаю</span>    
             </div>
             <h2>Образ жизни</h2>
             <div class="uk-margin">
                 <label>Ходите ли вы под солнце без защиты?</label>
-                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="radio9" checked>Да</span>
-                <span><input class="uk-radio" type="radio" name="radio9">Нет</span>
+                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="longStayUnderTheSun" checked>Да</span>
+                <span><input class="uk-radio" type="radio" name="longStayUnderTheSun">Нет</span>
             </div>
             <div class="uk-margin">
                 <label>Ваш образ питания</label>
                 <div class="uk-grid">
-                    <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="radio10">Недостаточная</span>
-                    <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="radio10" checked>Адекватная</span>
+                    <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="healthyFood">Недостаточная</span>
+                    <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="healthyFood" checked>Адекватная</span>
                     <span><input class="uk-radio" type="radio" name="radio10">Избыточная</span>
                 </div>
             </div>
             <div class="uk-margin">
                 <label>Были ли не защищённые половые акты?</label>
-                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="radio11">Да</span>
-                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="radio11" checked>Нет</span>
+                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="unprotectedSex">Да</span>
+                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="unprotectedSex" checked>Нет</span>
             </div>
             <div class="uk-margin">
                 <label>Отсутствует ли физическая активности</label>
-                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="radio12">Да</span>
-                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="radio12" checked>Нет</span>
+                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="isDoingSports">Да</span>
+                <span class=" uk-margin-small-right"><input class="uk-radio" type="radio" name="isDoingSports" checked>Нет</span>
             </div>
+            <button type="submit" data-info-btn class="uk-button uk-button-primary">Отправить</button>
         </form>
     </div>
+    <script src="./script/jquery-3.3.1.min.js"></script>
     <script src="./script/validate.min.js"></script>
-    <script>
-        validate.init();
-    </script>
+    <script src="./script/main.js"></script>
 </body>
 </html>
