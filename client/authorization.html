@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Persomal Medical Advice</title>
-  <link rel="stylesheet" href="./lib/css/uikit.min.css" />
+  <link rel="stylesheet" href="./style/uikit.min.css" />
   <link rel="stylesheet" href="./style/styles.css">
   
 </head>
@@ -16,21 +16,19 @@
         <a href="./index.html" class="header__heading-link">Personal Medical Advice</a>
       </h1>
     </header>
-    <main class="main-content">
-      <form method="POST" class="registration-form">
+    <main class="main-content"> 
+      <form method="POST" class="registration-form" data-validate>
         <h2 class="registration-form__heading">Вход</h2>
         <ul class="registration-form__list uk-list">
             <li class="uk-margin-bottom registration-form__item">
               <label for="email" class="registration-form__label">Введите email</label>
               <div class="uk-inline registration-form__row">
-                <span class="uk-form-icon" uk-icon="icon: user"></span>
-                <input class="uk-input" type="text" id="email" required placeholder="email">
+                <input class="uk-input" type="email" id="email" required placeholder="email">
               </div>
             </li>
             <li class="uk-margin-bottom registration-form__item">
               <label for="password" class="registration-form__label">Введите пароль</label>
               <div class="uk-inline registration-form__row">
-                <span class="uk-form-icon" uk-icon="icon: lock"></span>
                 <input class="uk-input" type="password" id="password" required placeholder="пароль">
               </div>
             </li>
@@ -45,8 +43,9 @@
       </form>
     </main>
   </div>
-  <!-- UIkit JS -->
-  <script src="./lib/js/uikit.min.js"></script>
-  <script src="./lib/js/uikit-icons.min.js"></script>
+  <script src="./script/validate.min.js"></script>
+  <script>
+    validate.init();
+  </script>
 </body>
 </html>

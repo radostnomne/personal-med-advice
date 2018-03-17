@@ -51,6 +51,16 @@ html, body{
   text-decoration: none;
 }
 
+.error {
+	border-color: red;
+}
+
+.error-message {
+	color: red;
+	font-size: 0.75rem;
+	margin-bottom: 5px;
+}
+
 /*  Index, Authorization Styles  */
 
 .registration-form{

@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- UIkit CSS -->
-    <link rel="stylesheet" href="lib/css/uikit.min.css" />
-    <link rel="stylesheet" href="style/styles.css" />
+    <link rel="stylesheet" href="./style/uikit.min.css" />
+    <link rel="stylesheet" href="./style/styles.css" />
     <!-- UIkit JS -->
-    <script src="lib/js/uikit.min.js"></script>
-    <script src="lib/js/uikit-icons.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -24,7 +22,7 @@
             <h2>Личные данные</h2>
             <div class="uk-margin">
                 <label>Имя</label>
-                <input class="uk-input">
+                <input class="uk-input" data-validate type="text" required>
             </div>
             <div  class="uk-margin">
                 <label>Пол</label>
@@ -32,16 +30,16 @@
                 <span><input class="uk-radio" type="radio" name="radio1">Ж</span>
             </div>
             <div class="uk-margin">
-                <label>Рост</label>
-                <input class="uk-input">
+                <label>Рост, см</label>
+                <input class="uk-input" type="number" min="10" required>
             </div>
             <div  class="uk-margin">
-                <label>Вес</label>
-                <input class="uk-input">
+                <label>Вес, кг</label>
+                <input class="uk-input" type="number" min="10" required>
             </div>
             <div class="uk-margin">
                 <label>Возраст</label>
-                <input class="uk-input">
+                <input class="uk-input" type="number" min="1" required>
             </div>
             <h2>Вредные привычки</h2>
             <div class="uk-margin">
@@ -110,5 +108,9 @@
             </div>
         </form>
     </div>
+    <script src="./script/validate.min.js"></script>
+    <script>
+        validate.init();
+    </script>
 </body>
 </html>
