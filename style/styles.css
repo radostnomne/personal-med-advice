@@ -1,0 +1,112 @@
+/*  Basic Styles  */
+
+html{
+  font-size: 14px;
+  line-height: 1.42;
+}
+
+html, body{
+  height: 100%;
+}
+
+.wrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.main-content{
+  padding: 0 20px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header{
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  box-sizing: border-box;
+
+  background-color: #1e87f0;
+}
+
+.header__heading{
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.header__heading-link{
+  color: white;
+}
+
+.header__heading-link:hover{
+  color: white;
+  text-decoration: none;
+}
+
+/*  Index, Authorization Styles  */
+
+.registration-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 30px;
+  border: 1px solid #e5e5e5;
+}
+
+.registration-form__list{
+  margin: 0;
+}
+
+.registration-form__row{
+  width: 100%;
+}
+
+.registration-form__label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.registration-form__btn{
+  width: 100%;
+}
+
+.registration-form__link{
+  border-bottom: 1px solid #1e87f0;
+}
+
+.registration-form__link:hover{
+  text-decoration: none;
+  border-bottom-color: transparent;
+}
+
+/*  Infoform Styles  */
+
+.user-info--wrapper{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.user-info--form{
+  padding: 0 30px;
+}
+
+.user-info--form label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.user-info--form .uk-input{
+  width: 400px;
+}
+
+.user-info--form .uk-radio{
+margin-right: 5px;
+}
