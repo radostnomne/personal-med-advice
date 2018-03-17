@@ -1,3 +1,5 @@
+/*  Basic Styles  */
+
 html{
   font-size: 14px;
   line-height: 1.42;
@@ -49,7 +51,9 @@ html, body{
   text-decoration: none;
 }
 
-.form{
+/*  Index, Authorization Styles  */
+
+.registration-form{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,28 +61,52 @@ html, body{
   border: 1px solid #e5e5e5;
 }
 
-.form__list{
+.registration-form__list{
   margin: 0;
 }
 
-.form__row{
+.registration-form__row{
   width: 100%;
 }
 
-.form__label{
+.registration-form__label{
   display: block;
   margin-bottom: 5px;
 }
 
-.form__btn{
+.registration-form__btn{
   width: 100%;
 }
 
-.form__link{
+.registration-form__link{
   border-bottom: 1px solid #1e87f0;
 }
 
-.form__link:hover{
+.registration-form__link:hover{
   text-decoration: none;
   border-bottom-color: transparent;
+}
+
+/*  Infoform Styles  */
+
+.user-info--wrapper{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.user-info--form{
+  padding: 0 30px;
+}
+
+.user-info--form label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.user-info--form .uk-input{
+  width: 400px;
+}
+
+.user-info--form .uk-radio{
+margin-right: 5px;
 }

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Personal MedAdvice</title>
   <link rel="stylesheet" href="./lib/css/uikit.min.css" />
-  <link rel="stylesheet" href="./style/index.css">
+  <link rel="stylesheet" href="./style/styles.css">
   
 </head>
 <body>
@@ -17,29 +17,29 @@
       </h1>
     </header>
     <main class="main-content">
-      <form method="POST" class="form">
-        <h2 class="form__heading">Регистрация</h2>
-        <ul class="form__list uk-list">
-            <li class="uk-margin-bottom form__item">
-              <label for="email" class="form__label">Введите email</label>
-              <div class="uk-inline form__row">
+      <form method="POST" class="registration-form">
+        <h2 class="registration-form__heading">Регистрация</h2>
+        <ul class="registration-form__list uk-list">
+            <li class="uk-margin-bottom registration-form__item">
+              <label for="email" class="registration-form__label">Введите email</label>
+              <div class="uk-inline registration-form__row">
                 <span class="uk-form-icon" uk-icon="icon: user"></span>
                 <input class="uk-input" type="email" required id="email" placeholder="email">
               </div>
             </li>
-            <li class="uk-margin-bottom form__item">
-              <label for="password" class="form__label">Введите пароль</label>
-              <div class="uk-inline form__row">
+            <li class="uk-margin-bottom registration-form__item">
+              <label for="password" class="registration-form__label">Введите пароль</label>
+              <div class="uk-inline registration-form__row">
                 <span class="uk-form-icon" uk-icon="icon: lock"></span>
                 <input class="uk-input" type="password" minlength="5" required id="password" placeholder="пароль">
               </div>
             </li>
-            <li class="uk-margin-bottom form__item">
-              <button class="uk-button uk-button-primary form__btn" type="submit">Создать аккаунт</button>
+            <li class="uk-margin-bottom registration-form__item">
+              <button class="uk-button uk-button-primary registration-form__btn" type="submit">Создать аккаунт</button>
             </li>
-            <li class="form__item">
+            <li class="registration-form__item">
               Уже есть аккаунт?
-              <a class="form__link" href="./authorization.html">Вход</a>
+              <a class="registration-form__link" href="./authorization.html">Вход</a>
             </li>
         </ul>
       </form>
